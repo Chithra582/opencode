@@ -1,0 +1,13 @@
+name: "lsp-symbol-inspector"
+description: "Queries the Language Server Protocol for workspace symbols, type definitions, and diagnostics."
+input_schema:
+  type: "object"
+  properties:
+    query:
+      type: "string"
+      description: "Symbol identifier, function name, or class definition to look up."
+    file_path:
+      type: "string"
+      description: "Source file context for symbol resolution."
+  required:
+    - "query"

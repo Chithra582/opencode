@@ -1,0 +1,18 @@
+name: "file-editor-patcher"
+description: "Applies targeted chunk replacements or unified diff patches to workspace files."
+input_schema:
+  type: "object"
+  properties:
+    file_path:
+      type: "string"
+      description: "Target file path relative to workspace root."
+    target_content:
+      type: "string"
+      description: "Exact existing content block to replace."
+    replacement_content:
+      type: "string"
+      description: "New replacement content block to insert."
+  required:
+    - "file_path"
+    - "target_content"
+    - "replacement_content"

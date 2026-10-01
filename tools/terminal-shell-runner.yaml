@@ -1,0 +1,16 @@
+name: "terminal-shell-runner"
+description: "Executes terminal commands in an isolated pseudo-terminal session with timeout handling."
+input_schema:
+  type: "object"
+  properties:
+    command:
+      type: "string"
+      description: "Shell command string to execute."
+    working_directory:
+      type: "string"
+      description: "Working directory relative to the repository root."
+    timeout_seconds:
+      type: "integer"
+      description: "Maximum execution duration before terminating the process."
+  required:
+    - "command"

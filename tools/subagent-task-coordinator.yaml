@@ -1,0 +1,14 @@
+name: "subagent-task-coordinator"
+description: "Dispatches and manages isolated background worker subagents for delegated tasks."
+input_schema:
+  type: "object"
+  properties:
+    task_description:
+      type: "string"
+      description: "Specific task objective for the subagent worker."
+    subagent_role:
+      type: "string"
+      description: "Specialized role name for the subagent e.g. test-runner, researcher."
+  required:
+    - "task_description"
+    - "subagent_role"

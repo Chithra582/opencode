@@ -1,0 +1,13 @@
+name: "codebase-grep-scanner"
+description: "Performs high-speed regex and literal text searches across codebase files."
+input_schema:
+  type: "object"
+  properties:
+    pattern:
+      type: "string"
+      description: "Regular expression or literal search pattern."
+    include_glob:
+      type: "string"
+      description: "Optional file glob pattern to restrict search scope."
+  required:
+    - "pattern"
