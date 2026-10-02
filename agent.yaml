@@ -1,5 +1,5 @@
 spec_version: "0.1.0"
-name: "opencode-agent-harness"
+name: opencode
 version: "1.0.0"
 description: >
   Terminal-first autonomous AI coding agent supporting multi-model execution,
@@ -60,5 +60,5 @@ tags:
   - autonomous-coding
 
 metadata:
-  domain: "developer-tools"
+  domain: Developer Tools / Open Autonomous Coding & Agent Harness
   category: "Developer Tools"
